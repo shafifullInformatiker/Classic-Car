@@ -4,340 +4,299 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Maven+Pro:wght@400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <title>Basics of HTML</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <head>
-      <nav>
-        <ul>
-          <li>
-             <a href="#"> Home</a>
-          </li>
-          <li>
-            <div class="dropdown">
-              <button class="dropbtn">Search Our Car Database 
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <form action="" id="carSearch">
-                  <div>
-                  <label for="mark">Mark</label>
-                  <select name="mark" id="mark">
-                      <optgroup label="Alle Marken"><option value="30708">JAC</option><option value="12400">Jaguar</option><option value="12600">Jeep</option><option value="13200">Kia</option><option value="13450">Koenigsegg</option><option value="13900">KTM</option><option value="14700">Lancia</option><option value="14800">Land Rover</option><option value="14845">Landwind</option><option value="31933">LEVC</option><option value="15200">Lexus</option><option value="15400">Ligier</option><option value="15500">Lincoln</option><option value="15900">Lotus</option><option value="31934">Lynk&amp;Co</option><option value="16200">Mahindra</option><option value="16500">MAN</option><option value="16600">Maserati</option><option value="31896">Maxus</option><option value="16700">Maybach</option><option value="16800">Mazda</option><option value="137">McLaren</option><option value="17200">Mercedes-Benz</option><option value="17300">MG</option><option value="30011">Microcar</option><option value="17500">MINI</option><option value="17700">Mitsubishi</option><option value="17900">Morgan</option><option value="31954">NIO</option><option value="18700">Nissan</option><option value="18875">NSU</option><option value="18975">Oldsmobile</option><option value="19000">Opel</option><option value="31955">ORA</option></optgroup>
-                  </select>
-                  </div>
-                  <div>
-                  <label for="model">Model</label>
-                  <select name="model" id="model">
-                    <option value="140">Abarth</option>
-                    <option value="31930">Aiways</option>
-                    <option value="31863">BAIC</option>
-                  </select>
-                  </div>
-                  <div>
-                  <label for="buildyear">Build Year</label>
-                  <select name="buildyear" id="buildyear">
-                    <option value="140">1930</option>
-                    <option value="31930">1940</option>
-                    <option value="31863">1941</option>
-                  </select>
-                  </div>
-                  <div>
-                    <button>Search</button>
-                  </div>
-
-
-
-                </form>
+  <nav>
+    <ul>
+      <li>
+        <a href="#"><i class="fa-solid fa-house fa-sm" style="color: #ffffff;"></i> Home</a>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">Search Our Car Database <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <form action="" id="carSearch">
+              <div>
+                <label for="mark">Mark</label>
+                <select name="mark" id="mark">
+                  <optgroup label="Alle Marken"><option value="30708">JAC</option><option value="12400">Jaguar</option><option value="12600">Jeep</option><option value="13200">Kia</option><option value="13450">Koenigsegg</option><option value="13900">KTM</option><option value="14700">Lancia</option><option value="14800">Land Rover</option><option value="14845">Landwind</option><option value="31933">LEVC</option><option value="15200">Lexus</option><option value="15400">Ligier</option><option value="15500">Lincoln</option><option value="15900">Lotus</option><option value="31934">Lynk&amp;Co</option><option value="16200">Mahindra</option><option value="16500">MAN</option><option value="16600">Maserati</option><option value="31896">Maxus</option><option value="16700">Maybach</option><option value="16800">Mazda</option><option value="137">McLaren</option><option value="17200">Mercedes-Benz</option><option value="17300">MG</option><option value="30011">Microcar</option><option value="17500">MINI</option><option value="17700">Mitsubishi</option><option value="17900">Morgan</option><option value="31954">NIO</option><option value="18700">Nissan</option><option value="18875">NSU</option><option value="18975">Oldsmobile</option><option value="19000">Opel</option><option value="31955">ORA</option></optgroup>
+                </select>
               </div>
-            </div> 
-          </li>
-          <li>
-            <a href="#"> About US</a>
-          </li>
-          <li>
-            <a href="#"> Locations</a>
-          </li>
-          <li>
-            <a href="#"> Contact</a>
-          </li>
-          
-        </ul>
-        <img src="resources/logo.png" alt="" style="width: 90px;">
-      </nav>
-    </head>
-  <div class="wrapper">
-      <div class="left">
-        <img src="resources/left.png" alt="" id="previous">
-      </div>
-      <div class="main">
-        <img src="resources/car/ford/tire/1/1.png" alt="" id="tire">
-        <img src="resources/car/ford/body/orange/1.png" alt="" id="mainImage"> 
-      </div>
-      <div class="right">
-        <img src="resources/right.png" alt="" id="next">   
-      </div>
-      <div class="form">
-        <form action="">
-          <div>
-            <label for="cars">Model </label>
-            <select id="cars" name="cars">
-            <option value="ford">Ford</option>
-            </select>
+              <div>
+                <label for="model">Model</label>
+                <select name="model" id="model">
+                  <option value="140">Abarth</option>
+                  <option value="31930">Aiways</option>
+                  <option value="31863">BAIC</option>
+                </select>
+              </div>
+              <div>
+                <label for="buildyear">Build Year</label>
+                <select name="buildyear" id="buildyear">
+                  <option value="140">1930</option>
+                  <option value="31930">1940</option>
+                  <option value="31863">1941</option>
+                </select>
+              </div>
+              <div>
+                <button><i class="fa-solid fa-magnifying-glass fa-lg"></i> Search </button>
+              </div>
+            </form>
+            <div class="searchTable">
+              <div class="cell">
+              <div class="image">
+                <img src="resources/alphaRomeo.jpeg" alt="">
+              </div>
+              <div class="detail">
+                <h4>Asia Motors Rocsta 1.8i Softtop</h4>
+                <p>EZ 06/1995, 51.876 km, 57 kW (77 PS)
+                    SUV / Geländewagen / Pickup, Unfallfrei, Benzin, Schaltgetriebe, HU 06/2025, 2/3 Türen
+                    ca. 9,8 l/100km (komb.), ca.  g CO₂/km (komb.)
+                    DE-67729 Sippersfeld, Privatanbieter
+                </p>
+              </div>
+                <div class="order">
+                  <button> Customize</button>
+                  <button>Contact</button>
+                  <button>Order</button>
+                </div>
+              </div>
+              <div class="cell">
+                <div class="image">
+                  <img src="resources/nissan.jpeg" alt="">
+                </div>
+                <div class="detail">
+                  <h4>Asia Motors Rocsta 1.8i Softtop</h4>
+                    <p>EZ 06/1995, 51.876 km, 57 kW (77 PS)
+                      SUV / Geländewagen / Pickup, Unfallfrei, Benzin, Schaltgetriebe, HU 06/2025, 2/3 Türen
+                      ca. 9,8 l/100km (komb.), ca.  g CO₂/km (komb.)
+                      DE-67729 Sippersfeld, Privatanbieter
+                    </p>
+                </div>
+                  <div class="order">
+                    <button> Customize</button>
+                    <button>Contact</button>
+                    <button>Order</button>
+                  </div>
+                </div>
+              <div class="cell">
+                <div class="image">
+                  <img src="resources/chevelet.jpeg" alt="">
+                </div>
+                <div class="detail">
+                  <h4>Asia Motors Rocsta 1.8i Softtop</h4>
+                  <p>EZ 06/1995, 51.876 km, 57 kW (77 PS)
+                            SUV / Geländewagen / Pickup, Unfallfrei, Benzin, Schaltgetriebe, HU 06/2025, 2/3 Türen
+                            ca. 9,8 l/100km (komb.), ca.  g CO₂/km (komb.)
+                            DE-67729 Sippersfeld, Privatanbieter
+                  </p>
+                </div>
+                <div class="order">
+                  <button> Customize</button>
+                  <button>Contact</button>
+                  <button>Order</button>
+                </div>
+              </div>
+              <div class="cell">
+                <div class="image">
+                  <img src="resources/taz.jpeg" alt="">
+                </div>
+                <div class="detail">
+                  <h4>Asia Motors Rocsta 1.8i Softtop</h4>
+                  <p>EZ 06/1995, 51.876 km, 57 kW (77 PS)
+                            SUV / Geländewagen / Pickup, Unfallfrei, Benzin, Schaltgetriebe, HU 06/2025, 2/3 Türen
+                            ca. 9,8 l/100km (komb.), ca.  g CO₂/km (komb.)
+                            DE-67729 Sippersfeld, Privatanbieter
+                  </p>
+                </div>
+                <div class="order">
+                  <button> Customize</button>
+                  <button>Contact</button>
+                  <button>Order</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="color">Color</label>
-            <select id="color" name="cars">
+        </div> 
+      </li>
+      <li>
+        <a href="#aboutus"> About US</a>
+      </li>
+      <li>
+        <a href="#locations"> Locations</a>
+      </li>
+      <li>
+        <a href="#contactus"> Contact</a>
+      </li>   
+    </ul>
+      <img src="resources/logo.png" alt="" style="width: 90px;">
+  </nav>
+  <div class="wrapper">
+    <h1>Our Featured Cars</h1>
+    <div class="left">
+      <img src="resources/left.png" alt="" id="previous">
+    </div>
+    <div class="main">
+      <img src="resources/car/ford/tire/1/1.png" alt="" id="tire">
+      <img src="resources/car/ford/body/orange/1.png" alt="" id="mainImage"> 
+    </div>
+    <div class="right">
+      <img src="resources/right.png" alt="" id="next">   
+    </div>
+    <div class="form">
+      <form action="">
+        <div>
+          <label for="cars">Model </label>
+          <select id="cars" name="cars">
+          <option value="ford">Ford</option>
+          </select>
+        </div>
+        <div>
+          <label for="color">Color</label>
+          <select id="color" name="cars">
             <option value="orange">Orange</option>
             <option value="black">Black</option>
             <option value="red">Red</option>
-            </select>
-          </div>
-          <div>
-            <label for="wheel">Wheel </label>
-            <select id="wheel" name="cars">
+          </select>
+        </div>
+        <div>
+          <label for="wheel">Wheel </label>
+          <select id="wheel" name="cars">
             <option value="1">Wheel 1</option>
             <option value="2">Wheel 2</option>
             </select>
-          </div>
-           <button> Order Now</button>
-        </form>
+        </div>
+        <button> Order Now</button>
+      </form>
     </div>
   </div>
   <div id="clear"></div>
-    
-    <div class="flex-aboutus">
-      <div>
-        <img src="./resources/dreamcar.jpeg" alt="">
-        <h2>Do you Want to Refresh your old memories! We rent your Dream car fully functional, Just enjoy your dream tour and your moments. we will take care of all other complexity that may arise.</h2>
-      </div>
-      <div>
-        <img src="./resources/maintainance.jpeg" alt="">
-        <h2>No worry about maintainance cost, Just rent your Dream Car with Affordable Prices.</h2>
-      </div>
-      <div>
-          <img src="./resources/environment.jpeg" alt="">
-          <h2>we will take of Enviornment, All our car Engine are upgraded to Electronic Engine and are enviornment Friendly</h2>
-      </div>
-      <div>
-        <img src="./resources/parking.jpeg" alt="">
-        <h2>Flexitbiliy is maximam. You can drop our cars anywhere in EU Countries, we will take of the rest! Just find a perfect parking spot</h2>
-      </div>
+  <div class="flex-aboutus" id="aboutus">
+    <div>
+      <img src="./resources/dreamcar.jpeg" alt="">
+      <h2>Do you Want to Refresh your old memories! We rent your Dream car fully functional, Just enjoy your dream tour and your moments. we will take care of all other complexity that may arise.</h2>
     </div>
-
-    <div class="flex-locations">
-      <div>
-        <ul>
-          <li>
-            <a href="#">Berlin</a>
-          </li>
-          <li>
-            <a href="#">Lisbon</a>
-          </li>
-          <li>
-            <a href="#">Paris</a>
-          </li>
-          <li>
-            <a href="#">Zurich</a>
-          </li>
-          <li>
-            <a href="#">warsaw</a>
-          </li>
-          <li>
-            <a href="#">Praha</a>
-          </li>
-          <li>
-            <a href="#">Amsterdam</a>
-          </li>
-          <li>
-            <a href="#">Copenhagen</a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <ul>
-          <li>
-            <a href="#">Vienna</a>
-          </li>
-          <li>
-            <a href="#">Talin</a>
-          </li>
-          <li>
-            <a href="#">Venice</a>
-          </li>
-          <li>
-            <a href="#">Bukharist</a>
-          </li>
-          <li>
-            <a href="#">Stockholm</a>
-          </li>
-          <li>
-            <a href="#">Rotterdam</a>
-          </li>
-          <li>
-            <a href="#">Hilsinki</a>
-          </li>
-          <li>
-            <a href="#">Frankfurt</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <a href="#">Rome</a>
-          </li>
-          <li>
-            <a href="#">Budapest</a>
-          </li>
-          <li>
-            <a href="#">Belgrade</a>
-          </li>
-          <li>
-            <a href="#">Sofia</a>
-          </li>
-          <li>
-            <a href="#">Barcelona</a>
-          </li>
-          <li>
-            <a href="#">Madrid</a>
-          </li>
-          <li>
-            <a href="#">Milan</a>
-          </li>
-          <li>
-            <a href="#">Minsk</a>
-          </li>
-        </ul>
-      </div>
+    <div>
+      <img src="./resources/maintainance.jpeg" alt="">
+      <h2>No worry about maintainance cost, Just rent your Dream Car with Affordable Prices.</h2>
     </div>
-    <div class="footer-contact">
-
-      <div style="flex-grow: 1;">
-        <img src="./resources/logofooter.png" alt="" style="width: 500px;">
-      </div>
-      <div style="flex-grow: 1;">
-        <p> E-mail: office@oldisgood.de </p>
-        <p> Tel: 0049432343233 </p>
-        <p>Main Office:<address> Rhinstrasse 232, 10212, Berlin, Germany</address></p>
-      </div>
-      <div style="flex-grow: 1;">
-        <p>X</p>
-        <p>Facebook</p>
-        <p>Insagram</p>
-
-      
-      </div>
-
+    <div>
+      <img src="./resources/environment.jpeg" alt="">
+      <h2>we will take of Enviornment, All our car Engine are upgraded to Electronic Engine and are enviornment Friendly</h2>
     </div>
-
-
-
-
-   <div id="overlay">
-
-   </div>
-
-    <div class="forum">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-          <input type="button" value="close" id="close">
-      
-        </form>
-      </div>
-
-
-
-
-
-<script language = "javascript" type = "text/javascript">
-
-var car = document.getElementById("car");
-
-var up  = 200;
-var element = document.getElementById("roadLine");
-var firstSignValue = 1500;
-
-function drive(e){
-  
-  try {
+    <div>
+      <img src="./resources/parking.jpeg" alt="">
+      <h2>Flexitbiliy is maximam. You can drop our cars anywhere in EU Countries, we will take care of the rest! Just find a perfect parking spot</h2>
+    </div>
+  </div>
+  <div class="flex-locations" id="locations">
+    <div>
+      <ul>
+        <li>
+          <a href="#">Berlin</a>
+        </li>
+        <li>
+          <a href="#">Lisbon</a>
+        </li>
+        <li>
+          <a href="#">Paris</a>
+        </li>
+        <li>
+          <a href="#">Zurich</a>
+        </li>
+        <li>
+          <a href="#">warsaw</a>
+        </li>
+        <li>
+          <a href="#">Praha</a>
+        </li>
+        <li>
+          <a href="#">Amsterdam</a>
+        </li>
+        <li>
+          <a href="#">Copenhagen</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <a href="#">Vienna</a>
+        </li>
+        <li>
+          <a href="#">Talin</a>
+        </li>
+        <li>
+          <a href="#">Venice</a>
+        </li>
+        <li>
+          <a href="#">Bukharist</a>
+        </li>
+        <li>
+          <a href="#">Stockholm</a>
+        </li>
+        <li>
+          <a href="#">Rotterdam</a>
+        </li>
+        <li>
+          <a href="#">Hilsinki</a>
+        </li>
+        <li>
+          <a href="#">Frankfurt</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <a href="#">Rome</a>
+        </li>
+        <li>
+          <a href="#">Budapest</a>
+        </li>
+        <li>
+          <a href="#">Belgrade</a>
+        </li>
+        <li>
+          <a href="#">Sofia</a>
+        </li>
+        <li>
+          <a href="#">Barcelona</a>
+        </li>
+        <li>
+          <a href="#">Madrid</a>
+        </li>
+        <li>
+          <a href="#">Milan</a>
+        </li>
+        <li>
+          <a href="#">Minsk</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-contact" id="contactus">
+    <div style="flex-grow: 1;">
+      <img src="./resources/logofooter.png" alt="" style="width: 500px;">
+    </div>
+    <div style="flex-grow: 1;">
+      <p> E-mail: office@oldisgood.de </p>
+      <p> Tel: 0049432343233 </p>
+      <p>Main Office:<address> Rhinstrasse 232, 10212, Berlin, Germany</address></p>
+    </div>
+    <div style="flex-grow: 1;">
+      <p><i class="fa-brands fa-x-twitter fa-lg"></i></p>
+      <p><i class="fa-brands fa-facebook fa-lg"></i></p>
+      <p><i class="fa-brands fa-instagram fa-lg"></i></p>
+    </div>
+  </div>
    
-     
-      up = up - 4;
-    firstSignValue = firstSignValue - 1;
-    element.style.backgroundPosition = up + "px";
-
-   
-  
- 
-    
-    up = up - e.deltaY;
-    
-    element.style.backgroundPosition = up + "px";
-   
-
-
-  
-}
-catch(err) {
-  
-}
-   
-
-    //alert(window.getComputedStyle(element).getPropertyValue('background-position-x'));
-
-}
-
-document.getElementById("apply").onclick = function() {show()};
-
-function show(){
- document.getElementById("overlay").style.display = "block";
- document.getElementsByClassName("forum")[0].style.display = "block";
-
-}
-
-document.getElementById("close").onclick = function() {hide()};
-
-
-
-function hide(){
- document.getElementById("overlay").style.display = "none";
- document.getElementsByClassName("forum")[0].style.display = "none";
-
-}
-
-window.onload = function(){
-         setInterval(drive, 1);
-
-        }
-
-       
-
-
-
-  
-       
-     </script>   
-
 <script type="text/javascript" language = "javascript">
   var previous = document.getElementById("previous");
   var next = document.getElementById("next");
@@ -347,6 +306,7 @@ window.onload = function(){
   var color = "orange";
   var number = 1;
 
+  
   var e = document.getElementById("color");
   e.onchange = function(){
        color = e.value;
@@ -360,29 +320,23 @@ window.onload = function(){
   }
   
 
-
-
   next.onclick = function(){
-      degree = degree + 1;
-      mainImage.src = "resources/car/ford/body/" + color + "/" + degree + ".png";
-      tire.src = "resources/car/ford/tire/" + number + "/" + degree + ".png";
-      if ( degree > 14){
+    if ( degree > 14){
           degree = 0;
       }
-      
-      
+      degree = degree + 1;
+      mainImage.src = "resources/car/ford/body/" + color + "/" + degree + ".png";
+      tire.src = "resources/car/ford/tire/" + number + "/" + degree + ".png";  
   }
+
   previous.onclick = function(){
-      if ( degree < 2){
+    if ( degree < 2){
           degree = 15;
       }
       degree = degree - 1;
       mainImage.src = "resources/car/ford/body/" + color + "/" + degree + ".png";
-      tire.src = "resources/car/ford/tire/" + number + "/" + degree + ".png";
-    
-      
+      tire.src = "resources/car/ford/tire/" + number + "/" + degree + ".png";     
   }
-
 </script>
 
 </body>
